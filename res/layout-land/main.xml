@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="282dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="34dp"
+            android:background="@drawable/top_tab_bg" >
+
+            <ImageView
+                android:id="@+id/mlogo"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/makko_logo" />
+
+            <TextView
+                android:id="@+id/pdtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/mlogo"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/publishingdream"
+                android:textColor="#255a8f"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/transparent"
+                android:text="@string/logouttext"
+                android:textColor="#FFFFFF"
+                android:textSize="7pt" />
+
+            <ImageView
+                android:id="@+id/vertext"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/logout"
+                android:src="@drawable/top_tab_separator" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@layout/backrepeat"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="143dp"
+                android:background="@drawable/title_image" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <WebView 
+                android:id="@+id/iklan_web"
+                android:layout_width="fill_parent"
+                android:layout_height="58dp"
+                android:layout_alignParentBottom="true" />
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/iklan_web"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#000" />
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#153371" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#000" />
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </TabHost>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bg_page">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"		           
+            android:layout_weight="1"
+			android:gravity="center"
+            android:background="@drawable/top_tab_bg">
+            <ImageView 
+                android:src="@drawable/makko_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView 
+            android:src="@drawable/top_tab_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>		        
+		<Button
+		    android:id="@+id/collection_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/comic_collection"
+            android:textSize="11dip"
+            android:textColor="#ffffff"
+            android:background="@drawable/top_tab_bg"/>
+		<ImageView 
+            android:src="@drawable/top_tab_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/favorite_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/comic_favorite"
+            android:textSize="11dip"
+            android:textColor="#ffffff"
+            android:background="@drawable/top_tab_bg"/>
+    </LinearLayout>		    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:gravity="center">
+        <ImageView 
+			android:src="@drawable/selectepisode"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<TextView 
+		    android:id="@+id/episodetext"
+            android:text="@string/episode_text"
+            android:textSize="23pt"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="13dp"
+			android:shadowColor="#AACCCCCC" android:shadowDx="2"
+        	android:shadowDy="2" android:shadowRadius="2"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:layout_margin="8dp"
+		android:padding="7dp"
+		android:background="@drawable/bg_radius_page">
+		
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android" 
+		    android:id="@+id/listview"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:divider="#ff444444"
+		    android:dividerHeight="1dp"
+		    android:cacheColorHint="#00000000"
+		    android:background="@layout/backrepeat"
+		    android:scrollbars="none" />
+    </LinearLayout>
+</LinearLayout>

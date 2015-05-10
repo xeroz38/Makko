@@ -1,0 +1,38 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:paddingTop="2dip"
+	android:paddingBottom="2dip">
+	
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:id="@+id/groupname" 
+		android:layout_width="fill_parent" 
+		android:layout_height="30dp"
+		android:background="#d2d2d2">
+	
+		<ImageView android:id="@+id/group"
+		    android:src="@drawable/group_icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"/>
+		<TextView android:id="@+id/tvGroupName" 
+			android:layout_width="wrap_content" 
+			android:layout_height="30dip" 
+			android:textSize="16sp" 
+			android:textStyle="bold" 
+			android:textColor="#333333"
+			android:paddingLeft="15dip" 
+			android:gravity="center_vertical"
+			android:layout_toRightOf="@id/group"
+			android:shadowColor="#AA333333" android:shadowDx="1.3"
+        	android:shadowDy="1.3" android:shadowRadius="1.3" />
+		<ImageView android:id="@+id/delete"
+		    android:src="@drawable/delete"
+		    android:layout_width="19dp"
+			android:layout_height="24dp"
+			android:layout_marginTop="3dp"
+			android:layout_marginRight="7dp"
+			android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+</LinearLayout>

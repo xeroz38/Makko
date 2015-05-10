@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.view"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	
+    <application
+        android:icon="@drawable/app_icon" 
+        android:label="@string/app_name" >
+        
+		<activity android:name="com.project.main.SplashScreen"
+		    android:label="@string/app_name"
+		    android:theme="@android:style/Theme.NoTitleBar"
+		    android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+        </activity>
+		<activity android:name="com.project.main.LoginActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name="com.project.main.RegistrationActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+                
+        <activity android:name="com.project.main.MakkoActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name="com.project.view.MakkoComicsTab" android:label="@string/app_name"></activity> 
+        <activity android:name="com.project.view.ComicEpisodeTab" android:label="@string/app_name"></activity> 
+	    <activity android:name="com.project.view.ComicCollectionTab" android:label="@string/app_name"></activity> 
+	    <activity android:name="com.project.view.ComicFavoriteTab" android:label="@string/app_name"></activity> 
+	        
+	    <activity android:name="com.project.main.MakkoDetailActivity" android:label="@string/app_name"
+	        android:theme="@android:style/Theme.NoTitleBar"></activity> 
+		<activity android:name="com.project.view.DetailEpisodeTab" android:label="@string/app_name"></activity> 
+		<activity android:name="com.project.view.DetailInfoTab" android:label="@string/app_name"></activity> 	        
+	        
+		<activity android:name="com.project.main.GalleryActivity" android:label="@string/app_name"
+		    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:name="com.project.main.GalleryDetailActivity" android:label="@string/app_name"
+		    android:theme="@android:style/Theme.NoTitleBar"></activity>
+		
+		<activity android:name="com.project.main.MakkoPageActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name="com.project.main.MakkoEpisodeActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+    </application>
+</manifest>

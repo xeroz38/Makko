@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Makko</string>
+    <string name="main_screen">Makko</string>
+    <string name="version">Version\n1.0</string>
+    <string name="splash_screen">SplashScreen</string>
+    <string name="publishingdream">Publishing\nDreams</string>
+    <string name="main_no_items">No Items</string>
+    <string name="comic_collection">MY COMIC COLLECTION</string>
+    <string name="comic_favorite">MY FAVORITE COMICS</string>
+    <string name="writter_text">WRITTER\t\t: </string>
+    <string name="artist_text">ARTIST\t\t\t: </string>
+    <string name="episode_text">SELECT EPISODE</string>
+    <string name="page_text">SELECT PAGE</string>
+    <string name="episode">EPISODE</string>
+    <string name="read_now">READ NOW</string>
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="not_register">NOT REGISTERED YET?</string>
+    <string name="create_account">CREATE AN ACCOUNT</string>
+    <string name="already_account">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="or_login">OR YOU CAN LOGIN WITH</string>
+    <string name="logouttext">LOGOUT</string>
+    <string name="title">Title</string>
+    <string name="credit">CREDIT</string>
+    <string name="story">STORY</string>
+</resources>

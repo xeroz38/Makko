@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <WebView 
+	    android:id="@+id/iklan_web"
+	    android:layout_width="320dp"
+	    android:layout_height="427dp"/>
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/close_ads" />
+</RelativeLayout>

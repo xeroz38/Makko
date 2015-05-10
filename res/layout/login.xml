@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_login"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="233dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/bg_login_form"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/nametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/name"
+                android:textSize="7pt" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="233dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/bg_login_form"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/passwordtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/password"
+                android:textSize="7pt" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical|right" >
+
+            <TextView
+                android:id="@+id/forgotpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password"
+                android:textSize="6pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="233dp"
+            android:layout_height="29dp"
+            android:layout_marginBottom="47dp"
+            android:gravity="center_vertical|right" >
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="99dp"
+                android:layout_height="29dp"
+                android:background="@drawable/login_button_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginBottom="17dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/create_account1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="13dp"
+                android:text="@string/not_register"
+                android:textColor="@android:color/white"
+                android:textSize="8pt" />
+
+            <TextView
+                android:id="@+id/create_account2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account"
+                android:textColor="@drawable/login_text_selector"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/alt_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or_login"
+                android:textColor="@android:color/white"
+                android:textSize="5pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="233dp"
+            android:layout_height="29dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/fb_btn"
+                android:layout_width="99dp"
+                android:layout_height="29dp"
+                android:background="@drawable/fb_button" />
+
+            <Button
+                android:id="@+id/tw_btn"
+                android:layout_width="99dp"
+                android:layout_height="29dp"
+                android:background="@drawable/tw_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+	<WebView 
+		android:id="@+id/fb"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone"/>
+</LinearLayout>
+</merge>
